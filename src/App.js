@@ -1,13 +1,17 @@
-import React, { Component } from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import LinearStepper from "./LinearStepper";
+import { CssBaseline, Container, Paper, Box } from "@material-ui/core";
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-    </div>
+    <>
+      <CssBaseline />
+      <Container component={Box} p={4}>
+        <Paper component={Box} p={3}>
+          <LinearStepper />
+        </Paper>
+      </Container>
+    </>
   );
 }
+
 export default App;
